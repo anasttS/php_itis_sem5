@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guest book</title>
+    <style type="text/css">
+        .form {
+            justify-content: center;
+            margin-left: 10%;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p><h1> Add your comment! </h1></p>
+    <form action="index.php" method="post" class="form">
+        <p><label>
+            <input name="name" placeholder="Enter name" value="" />
+        </label></p>
+        <p><label>
+            <input name="comment" placeholder="Enter comment" value="" />
+        </label></p>
+        <p><label>
+            <input type="submit" name="send" value="Send"/>
+        </label></p>
+        <p><label>
+           <input type="submit" name="show" value="See all comments"/>
+        </label></p>
+    </form>
+</div>
+</body>
+</html>
