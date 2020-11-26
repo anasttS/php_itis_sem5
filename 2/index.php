@@ -1,5 +1,5 @@
 <?php
-include "add_guest_comment_page.html";
+include "book.html";
 require "/home/anastt/PhpstormProjects/php_itis_5sem/vendor/predis/predis/autoload.php";
 Predis\Autoloader::register();
 
@@ -21,6 +21,7 @@ if (isset($_REQUEST['send'])) {
 }
 
 if (isset($_REQUEST['show'])) {
+    echo "<p><h1>All comments</h1></p>";
     $names = [];
     $comments = [];
     $names = $redis->lrange("names", 0, -1);
